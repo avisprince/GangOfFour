@@ -1,0 +1,1 @@
+This repo has coded examples of the Gang of Four design patterns. In depth descriptions can be found at: https://www.tutorialspoint.com/design_pattern/index.htm.
