@@ -42,7 +42,6 @@ namespace Filter
 
         private static void printPersons(List<Person> persons)
         {
-
             foreach (var person in persons)
             {
                 Console.WriteLine("Person : [ Name : " + person.Name + ", Gender : " + person.Gender + ", Marital Status : " + person.MaritalStatus + " ]");
