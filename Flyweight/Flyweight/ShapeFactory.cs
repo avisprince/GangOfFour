@@ -13,17 +13,14 @@ namespace Flyweight
 
         public static IShape GetCircle(string color)
         {
-            var circle = (Circle)circleDictionary[color];
-
-            if (circle == null)
+            if (!circleDictionary.ContainsKey(color))
             {
-                circle = new Circle { Color = color };
-                circleDictionary.Add(color, circle);
+                circleDictionary.Add(color, new Circle { Color = color });
 
                 Console.WriteLine("Creating circle of color : " + color);
             }
 
-            return circle;
+            return (Circle)circleDictionary[color];
         }
     }
 }
